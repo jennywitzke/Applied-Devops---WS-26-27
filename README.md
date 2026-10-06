@@ -4,81 +4,81 @@
 ## 1. Project overview
 ## 2. Requirement analysis
 ### 2.1 Functional requirements
-FR-01: The system shall allow receptionists to register a new patient.
- 
-FR-02: The system shall allow authorized staff to search for patients.
- 
-FR-03: The system shall allow authorized staff to view patient information.
- 
-FR-04: The system shall allow authorized staff to edit patient information.
- 
-FR-05: The system shall allow authorized staff to deactivate patient records while preserving historical data.
- 
-FR-06: The system shall allow administrators to register doctors.
- 
-FR-07: The system shall allow administrators to update doctor information.
- 
-FR-08: The system shall allow administrators to deactivate doctors.
- 
-FR-09: The system shall store doctor specialization and availability information.
- 
-FR-10: The system shall allow receptionists to schedule appointments.
- 
-FR-11: The system shall prevent double-booking of doctors.
- 
-FR-12: The system shall allow staff to update or cancel appointments.
- 
-FR-13: Doctors shall be able to record diagnoses and visit notes.
- 
-FR-14: Authorized medical staff shall be able to view previous medical records.
- 
-FR-15: Users shall be required to log in before accessing protected functionality.
- 
-FR-16: The system shall support receptionist, doctor, and administrator roles.
- 
-FR-17: The system shall enforce role-based access control.
- 
-FR-18: Doctors shall be able to export authorized data to CSV format.
+-FR-01: The system shall allow receptionists to register a new patient. 
+
+-FR-02: The system shall allow authorized staff to search for patients.
+
+-FR-03: The system shall allow authorized staff to view patient information.
+
+-FR-04: The system shall allow authorized staff to edit patient information.
+
+-FR-05: The system shall allow authorized staff to deactivate patient records while preserving historical data.
+
+-FR-06: The system shall allow administrators to register doctors.
+
+-FR-07: The system shall allow administrators to update doctor information.
+
+-FR-08: The system shall allow administrators to deactivate doctors.
+
+-FR-09: The system shall store doctor specialization and availability information.
+
+-FR-10: The system shall allow receptionists to schedule appointments.
+
+-FR-11: The system shall prevent double-booking of doctors.
+
+-FR-12: The system shall allow staff to update or cancel appointments.
+
+-FR-13: Doctors shall be able to record diagnoses and visit notes.
+
+-FR-14: Authorized medical staff shall be able to view previous medical records.
+
+-FR-15: Users shall be required to log in before accessing protected functionality.
+
+-FR-16: The system shall support receptionist, doctor, and administrator roles.
+
+-FR-17: The system shall enforce role-based access control.
+
+-FR-18: Doctors shall be able to export authorized data to CSV format.
 
 ### 2.2 Non-functional requirements
-NFR-01 Performance
+-NFR-01 Performance
 The system shall process normal user requests within 2 seconds under the expected demonstration workload.
- 
-NFR-02 Availability
+
+-NFR-02 Availability
 The application shall automatically recover from application or container failures.
- 
-NFR-03 Password Security
+
+-NFR-03 Password Security
 User passwords shall not be stored in plain text and shall be protected using a secure hashing mechanism.
- 
-NFR-04 Access Security
+
+-NFR-04 Access Security
 All protected functionality shall require authentication and role-based authorization.
- 
-NFR-05 Deployability
+
+-NFR-05 Deployability
 A successful change merged into the main branch shall automatically produce and publish a container image.
- 
-NFR-06 Testability
+
+-NFR-06 Testability
 Automated unit tests and end-to-end tests shall run on every pull request.
- 
-NFR-07 Observability
+
+-NFR-07 Observability
 Application and system metrics shall be available through a monitoring dashboard.
- 
-NFR-08 Maintainability
+
+-NFR-08 Maintainability
 The project shall use a documented branching strategy and a versioning scheme for software artifacts.
 
 ## 3. Roles and access control
 ### Receptionist
- 
+
 The receptionist manages patient records and appointments.
 The receptionist can register, search, update and deactivate patients as well as schedule, update and cancel appointments.
 The receptionist cannot access or modify medical notes.
- 
+
 ### Doctor
- 
+
 The doctor can access information about assigned patients and appointments.
 The doctor can record diagnoses and visit notes, view previous medical records and export authorized data to CSV.
- 
+
 ### Administrator
- 
+
 The administrator manages doctors and user accounts.
 The administrator can register, update and deactivate doctors and assign user roles.
 The administrator does not create or modify medical records.
@@ -105,7 +105,6 @@ The administrator does not create or modify medical records.
 - Administrators may export authorized data to support administrative and auditing activities.
 
 ## 4. Product backlog
-# Product Backlog
 
 ## US-20
 As any staff member, I want to log in, so that I can access only the functionality permitted by my role.
@@ -176,55 +175,34 @@ US-17 is second because users and roles must exist before permissions can be enf
 US-1 is third because patient management is a core business function and most other hospital workflows depend on patient records being available.
 
 ### Acceptance Criteria - US-20
- 
-Given valid credentials,
-when a staff member submits the login form,
-then access to the system is granted.
- 
-Given invalid credentials,
-when a staff member submits the login form,
-then access is denied and an error message is displayed.
- 
-Given a logged-in user,
-when the dashboard is loaded,
-then only functionality allowed for that role is available.
+
+Given valid credentials, when a staff member submits the login form, then access to the system is granted.
+
+Given invalid credentials, when a staff member submits the login form, then access is denied and an error message is displayed.
+
+Given a logged-in user, when the dashboard is loaded, then only functionality allowed for that role is available.
 
 ### Acceptance Criteria - US-17
- 
-Given valid user information,
-when an administrator creates a new account,
-then the account is stored successfully.
- 
-Given a selected role,
-when an administrator assigns the role to a user,
-then the role is linked to the account.
- 
-Given an existing account,
-when the administrator views the user details,
-then the assigned role is displayed correctly.
+
+Given valid user information, when an administrator creates a new account, then the account is stored successfully.
+
+Given a selected role, when an administrator assigns the role to a user, then the role is linked to the account.
+
+Given an existing account, when the administrator views the user details, then the assigned role is displayed correctly.
 
 ### Acceptance Criteria - US-5
- 
-Given a doctor already has an appointment at a selected time,
-when a receptionist attempts to book another appointment for the same doctor,
-then the system rejects the booking.
- 
-Given an available doctor,
-when a receptionist creates an appointment,
-then the appointment is stored successfully.
- 
-Given a newly created appointment,
-when the appointment list is opened,
-then the appointment is displayed.
 
-## 5. Process and ceremonies
-# Sprint Plan and Scrum Process
- 
+Given a doctor already has an appointment at a selected time, when a receptionist attempts to book another appointment for the same doctor, then the system rejects the booking.
+
+Given an available doctor, when a receptionist creates an appointment, then the appointment is stored successfully.
+
+Given a newly created appointment, when the appointment list is opened, then the appointment is displayed.
+
+## 5. Process and ceremonies 
 ## Sprint Length
-The project will use two-week sprints.  
-Two-week sprints provide enough time to implement complete features while allowing regular feedback during the weekly lab sessions.
+The project will use two-week sprints. Two-week sprints provide enough time to implement complete features while allowing regular feedback during the weekly lab sessions.
+
 ## Scrum Ceremonies
- 
 ### Sprint Planning
  
 When:
@@ -269,23 +247,21 @@ Produces:
 - Written retrospective notes.
  
 ### Daily Scrum Alternative
- 
 As a solo developer, I do not hold daily Scrum meetings.
- 
 Instead, I maintain a dated work log in the repository and update the project board whenever work is completed or priorities change.
 
 ## Planned Sprints
  
 ### Sprint 1 - Authentication and User Management
- 
+
 Deliverables:
 - US-20 Login
 - US-17 Create user accounts and assign roles
 - Basic RBAC implementation
 - CI pipeline setup
- 
+
 ### Sprint 2 - Patient and Doctor Management
- 
+
 Deliverables:
 - US-1 Register patient
 - US-2 Search patient
@@ -296,7 +272,7 @@ Deliverables:
 - US-16 Deactivate doctor
  
 ### Sprint 3 - Appointments and Medical Records
- 
+
 Deliverables:
 - US-5 Schedule appointment
 - US-6 Update or cancel appointment
@@ -306,7 +282,7 @@ Deliverables:
 - US-11 Read medical history
  
 ### Sprint 4 - Reporting and Finalisation
- 
+
 Deliverables:
 - US-12 Export CSV
 - US-7 Filter appointments
@@ -317,7 +293,6 @@ Deliverables:
 - Bug fixes and project polish
 
 ## Backlog Refinement Triggers
- 
 Backlog refinement is performed when one of the following situations occurs:
  
 - A new requirement is identified.
