@@ -316,3 +316,13 @@ Deliverables:
 - Documentation updates
 - Bug fixes and project polish
 
+## Backlog Refinement Triggers
+ 
+Backlog refinement is performed when one of the following situations occurs:
+ 
+- A new requirement is identified.
+- An existing requirement changes.
+- A user story is too large to be completed within one sprint.
+- A story is not completed during a sprint and must be re-estimated.
+- A technical constraint or dependency is discovered during implementation.
+- Feedback from a sprint review results in changes to priorities or functionality.
