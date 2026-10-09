@@ -301,3 +301,80 @@ Backlog refinement is performed when one of the following situations occurs:
 - A story is not completed during a sprint and must be re-estimated.
 - A technical constraint or dependency is discovered during implementation.
 - Feedback from a sprint review results in changes to priorities or functionality.
+
+
+## 6. Epics and Tasks 
+### Authentication and access
+- US-4 Deactivate a patient record
+
+### Patient management
+- US-1 Register a new patient
+  
+- US-2 Search for an existing patient
+
+- US-3 Edit a patient's contact details
+
+### Doctor mangagement
+- US-9 Open the record of a patient assigned to me
+
+- US-14 Register a doctor with a specialisation
+
+- US-15 Update doctor details
+
+### Appointment scheduling
+- US-5 Schedule an appointment
+
+- US-6 Update or cancel an appointment
+
+- US-7 Filter appointments by date
+
+- US-8 View my scheduled appointments
+  
+- US-13 Search my appointments by patient name
+
+
+### Medical records and export
+- US-10 Record diagnosis and visit notes
+
+- US-11 Read the previous medical records of my patients
+
+### Platfrom and pipeline
+- US-12 Export authorised data to CSV
+
+## 7. Scaling the User-Storys
+Chosen Scale is Fibonacci from 1, 2, 3, 5, 8, 13
+
+| Number | Meaning| 
+|--------|--------|
+| 1 | very easy and fast to complete task |
+| 2 | |
+| 3 | |
+| 5 | | 
+| 8 | |
+| 13 | |
+
+
+
+Pick scale: 
+| ID | User story | Points | Explanation of chosen number |
+|------------|-------------|---------|---------------|
+| US-1 | Register a new patient | 13 |  |
+| US-2 | Search for an existing patient |  |  |
+| US-3 | Edit a patient's contact details |  |  |
+| US-4 | Deactivate a patient record |  |  |
+| US-5 | Schedule an appointment |   |  |
+| US-6 | Update or cancel an appointment |  |  |
+| US-7 | Filter appointments by date |  |  |
+| US-8 | View my scheduled appointments |  |  |
+| US-9 | Open the record of a patient assigned to me
+ |  |  |
+| US-10 | Record diagnosis and visit notes |  |  |
+| US-11 | Read the previous medical records of my patients | | |
+| US-12 | Export authorised data to CSV | | |
+| US-13 | Search my appointments by patient name | | |
+
+
+## 8. Outline 
+
+## 9. Language, framework, database, test runner
+
