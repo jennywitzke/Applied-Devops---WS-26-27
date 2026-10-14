@@ -253,48 +253,6 @@ Produces:
 As a solo developer, I do not hold daily Scrum meetings.
 Instead, I maintain a dated work log in the repository and update the project board whenever work is completed or priorities change.
 
-## Planned Sprints
- 
-### Sprint 1 - Authentication and User Management
-
-Deliverables:
-- US-20 Login
-- US-17 Create user accounts and assign roles
-- Basic RBAC implementation
-- CI pipeline setup
-
-### Sprint 2 - Patient and Doctor Management
-
-Deliverables:
-- US-1 Register patient
-- US-2 Search patient
-- US-3 Edit patient details
-- US-4 Deactivate patient
-- US-14 Register doctor
-- US-15 Update doctor details
-- US-16 Deactivate doctor
- 
-### Sprint 3 - Appointments and Medical Records
-
-Deliverables:
-- US-5 Schedule appointment
-- US-6 Update or cancel appointment
-- US-8 View appointments
-- US-9 Open patient records
-- US-10 Record diagnoses and notes
-- US-11 Read medical history
- 
-### Sprint 4 - Reporting and Finalisation
-
-Deliverables:
-- US-12 Export CSV
-- US-7 Filter appointments
-- US-13 Search appointments
-- US-19 Reset password
-- End-to-end testing
-- Documentation updates
-- Bug fixes and project polish
-
 ## Backlog Refinement Triggers
 Backlog refinement is performed when one of the following situations occurs:
  
