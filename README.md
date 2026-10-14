@@ -462,4 +462,20 @@ The following sprint plan is an initial forecast based on the estimated story po
 | Sprint 4 | Medical records, reporting, and project completion | US-9, US-10, US-11, US-12, US-18, US-19, US-7, US-13 | 19 |
 
 ## 9. Language, framework, database, test runner
+### Programming Language
+Python: Python was chosen because it is the language I am most familiar with and allows rapid development of the required functionality.
 
+### Framework
+FastAPI: FastAPI provides a lightweight and modern framework for developing REST APIs and integrates well with automated testing and containerisation.
+
+### Database
+PostgreSQL: PostgreSQL is a reliable relational database with official Docker images and strong support within the Python ecosystem.
+
+### Test Framework
+pytest: pytest offers a simple and powerful way to create automated tests and integrates easily into CI pipelines.
+
+### End-to-End Testing
+Playwright for Python: Playwright supports reliable browser automation and can be executed automatically in GitHub Actions.
+
+### Containerisation
+Docker: Docker ensures a consistent runtime environment across development, testing, and deployment.
