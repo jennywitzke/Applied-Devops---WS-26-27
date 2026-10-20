@@ -1,7 +1,7 @@
 ---
 name: Task
 about: Create a development task
-title: "TASK: "
+title: "T-: "
 labels: task
 ---
 
