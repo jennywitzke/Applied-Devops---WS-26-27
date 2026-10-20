@@ -4,7 +4,7 @@
 
 Branches must follow the format:
 
-<issue-number>-<story-or-task-id>-<short-description>
+`<issue-number>-<story-or-task-id>-<short-description>`
 
 Examples:
 
